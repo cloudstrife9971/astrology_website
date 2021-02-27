@@ -55,33 +55,108 @@
 
 /* ----------------------------featuredastrologers---------------- */
 .bg-color {
-  background-color: rgba(211,206,230,.13);
+  background-color: rgba(211, 206, 230, 0.13);
 }
 .card-container {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 .custom-card {
-  
 }
 .img-container {
-    height: 100px;
-    width: 100px;
-    border-radius: 120px;
-    border: 1px solid red;
-    margin: auto;
-    overflow: hidden;
+  height: 100px;
+  width: 100px;
+  border-radius: 120px;
+  border: 1px solid red;
+  margin: auto;
+  overflow: hidden;
 }
 .img {
-    width: 100%;
+  width: 100%;
 }
 .body {
-    margin-top: 17px;
+  margin-top: 17px;
 }
 .title {
-    color: #f0941e;
+  color: #f0941e;
 }
 .sub-title {
 }
 .copy {
-    color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------login----------------------------- */
+.custom-overlay {
+  /* position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+
+  cursor: pointer; */
+}
+.login-card {
+ 
+  box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+  border: 1px solid rgba(0,0,0,.2);
+  margin-top: 62px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%); */
+}
+.login-img-container {
+background-image: url('../login-form-bg.png');
+margin-top: -17px;
+height: 100%;
+background-repeat: repeat-y;
+}
+.login-img-txt {
+}
+.login-form-container {
+  padding: 40px 50px;
+  padding: 190px 50px;
+
+}
+.login-form-heading {
+  font-size: 36px;
+  font-weight: 400;
+}
+.login-form-subheading {
+  font-size: 18px;
+  color: #666;
+  margin-top: 12px;
+  font-weight: 400;
+}
+.login-input-container {
+  margin-top: 34px;
+}
+.login-input-container input {
+  padding: 14px;
+}
+.submit-btn {
+}
+.enter-no {
+  color: #a94442;
+  margin-top: 14px;
+}
+.custom-submit-btn {
+  width: 100%;
+  border-radius: 27px;
+  background-color: #fc0;
+  border: 1px solid #d2a700;
+  color: #333;
+  padding: 12px;
+  font-size: 23px;
+  margin-top: 21px;
+}
+.terms{
+  color: #666;
+  font-size: 18px;
+  margin-top: 18px;
+}
+.terms span {
+  color:#c39f0f
 }
