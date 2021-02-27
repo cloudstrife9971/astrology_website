@@ -1,0 +1,87 @@
+/* --------------------------howitworks------------------ */
+.section {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 75px 0px;
+  /* border: 1px solid red; */
+}
+.heading {
+  color: #f0941e;
+  font-size: 32px;
+}
+.subheading {
+  margin-top: 25px;
+  color: #232323;
+  opacity: 0.5;
+  font-size: 16px;
+}
+.list-container {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-top: 60px;
+}
+.list-items {
+  display: inline-block;
+  width: 10%;
+  position: relative;
+  margin-left: 10%;
+}
+.icon {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 100%;
+  border: 1px solid #f0941e;
+  position: relative;
+  border-radius: 120px;
+}
+.list-items:first-child {
+  margin-left: 0;
+}
+.icon::before {
+  content: "";
+  border-top: 4px dotted #f0941e;
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+}
+/* .icon:last-of-type::before {
+    content: none;
+} */
+.list-items:last-of-type .icon::before {
+  content: none;
+}
+
+/* ----------------------------featuredastrologers---------------- */
+.bg-color {
+  background-color: rgba(211,206,230,.13);
+}
+.card-container {
+    margin-top: 50px;
+}
+.custom-card {
+  
+}
+.img-container {
+    height: 100px;
+    width: 100px;
+    border-radius: 120px;
+    border: 1px solid red;
+    margin: auto;
+    overflow: hidden;
+}
+.img {
+    width: 100%;
+}
+.body {
+    margin-top: 17px;
+}
+.title {
+    color: #f0941e;
+}
+.sub-title {
+}
+.copy {
+    color: rgba(0,0,0,.5);
+}

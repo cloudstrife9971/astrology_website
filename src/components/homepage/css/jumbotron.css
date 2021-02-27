@@ -1,0 +1,57 @@
+.hero-img-container {
+  height: 100vh;
+  background-image: url('../jumbotron.jpg');
+  background-size: cover;
+  background-position: center;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+}
+.heading-first {
+  font-family: "proxima_novasemibold";
+  font-size: 80px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 0;
+  text-transform: capitalize;
+}
+.heading-first span {
+  font-family: "proxima_novalight";
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+.heading-second {
+  font-family: "proxima_novasemibold";
+  font-size: 80px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: -11px;
+}
+.sub-heading {  
+  font-size: 24px;
+  font-family: "proxima_novalight";
+  color: #fff;
+}
+.cta-container {
+    margin-top: 24px;
+}
+.cta-btn {
+    background-color: #18cf8f;
+    border-radius: 6.25px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding: 20px 60px;
+    cursor: pointer;
+    cursor: pointer;
+    border: none;
+    text-transform: capitalize;
+}
+.learn-more {
+    background-color: transparent;
+    font-size: 21px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+}

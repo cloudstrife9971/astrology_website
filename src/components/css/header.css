@@ -1,0 +1,32 @@
+.header {
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.logo-container {
+  margin-right: auto;
+}
+.logo {
+  width: 93px;
+  height: 89px;
+}
+.find-astro {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.sign-in-btn{
+    background-color: #f0941e;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    width: 91px;
+    height: 43px;
+    color: #fff;
+    font-family: Metropolis-SemiBold,sans-serif;
+    margin-left: 36px;
+}
