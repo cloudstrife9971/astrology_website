@@ -1,0 +1,115 @@
+ .hello {
+    border: 1px solid #dfdfdf !important;
+   
+ }
+ .packs__container {
+  text-align: center;
+  padding-top: 18px;
+}
+
+.packs__title {
+  font-size: 24px;
+}
+.packs__subtitle {
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+.wallet__heading {
+  font-size: 14px;
+  margin-bottom: 21px;
+  margin-top: 28px;
+}
+
+.wallet__card {
+  padding: 11px 31px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfdfdf;
+}
+.wallet__title {
+  margin-left: 39px;
+  font-size: 22px;
+}
+.wallet__price {
+  display: block;
+  font-weight: 600;
+}
+.amount__heading {
+  margin-top: 24px;
+  margin-bottom: 23px;
+}
+
+.amount__heading ~ table {
+  margin-bottom: 100px;
+}
+table  tr td {
+    padding: 3px 12px !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #999;
+}
+table tr:nth-child(3) td , table tr:nth-child(4) td {
+    color: black;
+}
+.pay__btn {
+  background-color: #fc0;
+  display: block;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 19px;
+  color: #333;
+  border: 1px solid #e9b632;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.pay__btn:hover {
+    background-color: #e8bb06;
+}
+@media (min-width: 992px) {
+  .pay__btn {
+    border-radius: 100px;
+    position: static;
+  }
+  .amount__heading ~ table {
+    margin-bottom: 35px;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+.item__container {
+  border-radius: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #333;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 54px;
+  cursor: pointer;
+}
+.item__container:hover {
+  color: red;
+}
+
+.item__title {
+  background: #f1f1f1;
+  font-size: 19px;
+
+  padding: 15px 0;
+}
+.item__price {
+  font-size: 40px;
+  padding: 5px 0 10px 0;
+}
+.item__btn {
+  border: 1px solid #ccc;
+  padding: 11px 20px 12px 20px;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  background: #fff;
+  position: relative;
+  top: 11px;
+}
