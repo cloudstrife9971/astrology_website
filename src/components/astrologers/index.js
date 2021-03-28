@@ -6,8 +6,8 @@ export default class Astrologers extends Component {
   render() {
     return (
       <Fragment>
-        {/* <Astrologersheader></Astrologersheader> */}
-          {/* <AstrologerCard></AstrologerCard> */}
+        <Astrologersheader></Astrologersheader>
+          <AstrologerCard showModal={this.props.showModal}></AstrologerCard>
       </Fragment>
     );
   }

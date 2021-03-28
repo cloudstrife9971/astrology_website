@@ -1,11 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 export default class Authentication extends Component {
   render() {
+    const showHideClassName = this.props.show ? "overlay__section display-block" : "overlay__section display-none";
     return (
-      <section>
-        <div className="custom-overlay">
-          <div className="container">
+      <Fragment>
+        <section className={showHideClassName}
+        
+         >
+          <div className="custom-overlay">
             <div className="login-card">
               <div className="row">
                 <div className="col-lg-5 d-none d-lg-block ">
@@ -15,6 +18,9 @@ export default class Authentication extends Component {
                 </div>
                 <div className="col-lg-7">
                   <div className="login-form-container">
+                    <button className='custom-cross-btn'
+                     onClick={this.props.hideModal}
+                    ></button>
                     <h2 className="login-form-heading">LOGIN/SIGN UP</h2>
                     <h3 className="login-form-subheading">
                       Please enter your mobile number to Login/Sign Up on
@@ -39,24 +45,29 @@ export default class Authentication extends Component {
                               aria-label="State"
                             />
                           </div>
-                        <div className='container'>
-                        <div className='row'>
-                            <div className='col-3'></div>
-                            <div className='col-9 enter-no'>Enter your 10 digit mobile number</div>
-                        </div>
-                        </div>
+                          <div className="container">
+                            <div className="row">
+                              <div className="col-3"></div>
+                              <div className="col-9 enter-no">
+                                Enter your 10 digit mobile number
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
                         <div class="col-12">
-                          <button type="submit" class="btn btn-primary custom-submit-btn">
+                          <button
+                            type="submit"
+                            class="btn btn-primary custom-submit-btn"
+                          >
                             Sign in
                           </button>
                         </div>
                       </form>
                     </div>
-                    <p className='terms'>
+                    <p className="terms">
                       By proceeding, I Agree to
-                      <span >Terms and Conditions</span>&amp
+                      <span>Terms and Conditions</span>&amp
                       <span>Privacy Policy</span>
                     </p>
                   </div>
@@ -64,8 +75,8 @@ export default class Authentication extends Component {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Fragment>
     );
   }
 }

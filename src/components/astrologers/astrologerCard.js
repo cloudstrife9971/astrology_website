@@ -13,7 +13,7 @@ class AstrologerCardsingle extends Component {
           <h5 className='astro-price'><span>$</span><span>20</span>/min</h5>
         </div>
       <div >
-          <button className='astro-call-btn'>call</button>
+          <button className='astro-call-btn' onClick={this.props.showModal}>call</button>
       </div>
       </div>
     );
@@ -27,13 +27,13 @@ export default class AstrologerCard extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-4">
-              <AstrologerCardsingle></AstrologerCardsingle>
+              <AstrologerCardsingle showModal={this.props.showModal}></AstrologerCardsingle>
             </div>
             <div className="col-lg-4">
-              <AstrologerCardsingle></AstrologerCardsingle>
+              <AstrologerCardsingle  showModal={this.props.showModal}></AstrologerCardsingle>
             </div>
             <div className="col-lg-4">
-              <AstrologerCardsingle></AstrologerCardsingle>
+              <AstrologerCardsingle  showModal={this.props.showModal}></AstrologerCardsingle>
             </div> <div className="col-lg-4">
               <AstrologerCardsingle></AstrologerCardsingle>
             </div> <div className="col-lg-4">

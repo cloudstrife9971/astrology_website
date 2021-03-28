@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import "./css/jumbotron.css";
 export default class jumbotron extends Component {
   render() {
+   
     return (
+ 
       <section className="hero-img-container">
         <div className="hero-txt-container container">
             {/* <div className='row'> */}
@@ -15,7 +17,7 @@ export default class jumbotron extends Component {
             expertise and deep knowledge.
           </h3>
           <div className='cta-container'>
-            <button className="cta-btn">find your expert</button>
+            <button className="cta-btn" onClick={this.props.showModal}>find your expert</button>
             <a href="" className="learn-more">
               Learn more
             </a>

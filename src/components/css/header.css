@@ -1,25 +1,27 @@
-.header {
-  padding: 20px 20px;
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+.header__header {
+  /* padding: 20px 20px; */
   display: flex;
   align-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
 }
-.logo-container {
+.header__logo-container {
   margin-right: auto;
 }
-.logo {
+.header__logo {
   width: 93px;
   height: 89px;
 }
-.find-astro {
+.header__find-astro {
     font-size: 16px;
     text-transform: capitalize;
     color: #fff;
+    color: red;
+
 }
-.sign-in-btn{
+/* .sign-in-btn{
     background-color: #f0941e;
     border: none;
     font-size: 17px;
@@ -29,4 +31,8 @@
     color: #fff;
     font-family: Metropolis-SemiBold,sans-serif;
     margin-left: 36px;
+} */
+
+.header__login-btn {
+  margin-left: 20px;
 }

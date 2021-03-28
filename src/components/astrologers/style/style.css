@@ -64,4 +64,8 @@
     padding: 2px 29px;
     border-radius: 9px;
     margin-top: 64px;
+    cursor: pointer;
+}
+.astro-call-btn:hover{
+  background-color: greenyellow;
 }

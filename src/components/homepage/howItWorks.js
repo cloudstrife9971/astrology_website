@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./css/common.css";
-
+import wallet__img from "./wallet.jpg";
 export default class howItWorks extends Component {
   render() {
     return (
@@ -12,19 +12,30 @@ export default class howItWorks extends Component {
           </h3>
           <ul className="list-container">
             <li className="list-items">
-              <div className="icon"></div>
+              <div className="icon">
+                <img className="wallet-img" src={wallet__img} alt="" />
+              </div>
               <div className="txt">Lorem Ipsum</div>
             </li>
             <li className="list-items">
-              <div className="icon"></div>
+              <div className="icon">
+                {" "}
+                <img className="wallet-img" src={wallet__img} alt="" />
+              </div>
               <div className="txt">Lorem Ipsum</div>
             </li>
             <li className="list-items">
-              <div className="icon"></div>
+              <div className="icon">
+                {" "}
+                <img className="wallet-img" src={wallet__img} alt="" />
+              </div>
               <div className="txt">Lorem Ipsum</div>
             </li>
             <li className="list-items">
-              <div className="icon"></div>
+              <div className="icon">
+                {" "}
+                <img className="wallet-img" src={wallet__img} alt="" />
+              </div>
               <div className="txt">Lorem Ipsum</div>
             </li>
           </ul>

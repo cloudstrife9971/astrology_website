@@ -1,6 +1,6 @@
 .hero-img-container {
   height: 100vh;
-  background-image: url('../jumbotron.jpg');
+  background-image: url('../jumbotron-2.jpg');
   background-size: cover;
   background-position: center;
   /* border: 1px solid red; */
@@ -55,3 +55,4 @@
     text-transform: capitalize;
     color: #fff;
 }
+
