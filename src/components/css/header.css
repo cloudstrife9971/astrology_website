@@ -1,6 +1,8 @@
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none;
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
 }
 .header__header {
   /* padding: 20px 20px; */
@@ -15,11 +17,10 @@ a:hover, a:visited, a:link, a:active
   height: 89px;
 }
 .header__find-astro {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #fff;
-    color: red;
-
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #fff;
+  color: red;
 }
 /* .sign-in-btn{
     background-color: #f0941e;
@@ -36,3 +37,67 @@ a:hover, a:visited, a:link, a:active
 .header__login-btn {
   margin-left: 20px;
 }
+
+.header__userbtn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    padding: 4px 9px;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.header__userbtn__user-icon {
+  position: relative;
+}
+.header__userbtn__user-icon img {
+  width: 37px;
+}
+.header__userbtn__user-icon::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 45%;
+  position: absolute;
+  right: -5px;
+  bottom: 0px;
+  border: 4px solid white;
+  box-sizing: content-box;
+}
+.header__userbtn__arrow-icon{
+  width: 17px;
+  margin-left: 10px;
+  
+}
+/* .header__userbtn__status{
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  display: block;
+  border-radius: 45%;
+} */
+
+.header__userbtn__dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  top: 46px;
+  left: 0;
+  text-align: left;
+}
+.header__userbtn__dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.header__userbtn__dropdown-content a:hover {background-color: #ddd;}
+
+.header__userbtn:hover .header__userbtn__dropdown-content {display: block;}

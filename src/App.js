@@ -2,11 +2,15 @@ import React, { Component, Fragment } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./App.css";
-import Header from "./components/header";
+import Header from "./components/header/header.js";
 import Homepage from "./components/homepage/index.js";
 import Athentication from "./components/authentication";
 import Astrologers from "./components/astrologers/index.js";
 import Packs from "./components/packs/index.js";
+import Footer from "./components/homepage/footer.js";
+import UserInfo from "./components/user/index.js";
+import Termcondition from "./components/footerPages/term&condition.js";
+import Privacy from "./components/footerPages/privacy.js";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default class App extends Component {
   constructor() {
@@ -32,13 +36,23 @@ export default class App extends Component {
         <Router>
           <Header showModal={this.showModal}></Header>
           <Switch>
-            <Route exact path="/"><Homepage showModal={this.showModal}></Homepage></Route>
-            <Route path="/astrologers"><Astrologers showModal={this.showModal}></Astrologers></Route>
+            <Route exact path="/">
+              <Homepage showModal={this.showModal}></Homepage>
+            </Route>
+            <Route path="/astrologers">
+              <Astrologers showModal={this.showModal}></Astrologers>
+            </Route>
             <Route path="/Login/Register">
-           <Packs></Packs>
+              <Packs></Packs>
+            </Route>
+            <Route path="/:id">
+              <UserInfo></UserInfo>
             </Route>
           </Switch>
           <Athentication show={this.state.show} hideModal={this.hideModal}></Athentication>
+          <Footer></Footer>
+          {/* <Termcondition></Termcondition> */}
+          {/* <Privacy></Privacy> */}
         </Router>
       </Fragment>
     );

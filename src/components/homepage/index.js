@@ -12,7 +12,7 @@ export default class index extends Component {
         <HowItWorks></HowItWorks>
         <FeaturedAstrologers></FeaturedAstrologers>
         <Testimonials></Testimonials>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </section>
     );
   }

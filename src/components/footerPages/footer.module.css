@@ -1,0 +1,16 @@
+.footer__heroimg {
+    /* border: 1px solid red; */
+    height: 250px;
+    margin-bottom: 40px;
+    background-image: url("../astrologers/img-banner.jpg");
+    background-position: bottom;
+    position: relative;
+}
+.footer__heading {
+
+position: absolute;
+left: 38px;
+bottom: 40px;
+font-size: 51px;
+color: burlywood;
+}

@@ -1,0 +1,55 @@
+.userinfo {
+  border: 1px solid #e8e8e8;
+  padding: 20px 6px;
+}
+
+.userinfo__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.userinfo__head__title {
+  color: #595959;
+  font-size: 30px;
+  font-weight: 500;
+}
+.userinfo__head__subtitle {
+  color: #333;
+  font-size: 20px;
+  font-weight: 800;
+}
+.userinfo__head__btn {
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 50px;
+
+  color: #333;
+  background-color: #fc0;
+  border-color: #e6b800;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 9px 20px;
+  font-size: 14px;
+}
+
+.userinfo__head__btn:hover {
+  color: #333;
+  background-color: #cca300;
+  border-color: #a88700;
+}
+
+
+.personaldetails {
+text-transform: uppercase;  
+border-bottom: 1px solid black;
+padding-bottom: 15px;
+margin-bottom: 46px;
+}
