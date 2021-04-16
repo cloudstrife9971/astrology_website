@@ -52,14 +52,14 @@
 .list-items:last-of-type .icon::before {
   content: none;
 }
-.wallet-img{
+.wallet-img {
   vertical-align: middle;
-    border-style: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 44px;
+  border-style: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
 }
 /* ----------------------------featuredastrologers---------------- */
 .bg-color {
@@ -140,7 +140,7 @@
 }
 .login-form-container {
   padding: 40px 50px;
-  padding: 160px 50px;
+  padding: 90px 50px;
 }
 .login-form-heading {
   font-size: 36px;
@@ -173,6 +173,7 @@
   padding: 12px;
   font-size: 23px;
   margin-top: 21px;
+  cursor: pointer;
 }
 .terms {
   color: #666;
@@ -220,7 +221,6 @@
   .custom-overlay {
     width: 95%;
   }
-  
 }
 
 @media (min-width: 768px) {
@@ -243,6 +243,38 @@
   .custom-overlay {
   }
 }
+.enter-otp,
+.otp-issue-container {
+  color: #666;
+}
+.resend-otp a,
+.resend-otp-call a {
+  color: #666;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.opt-input-container input {
+  margin: 0 10px 15px 0;
+  padding: 0;
+  height: 45px;
+  width: 40px !important;
+  outline: none;
+  border: none;
+  /* font-size: 16px !important; */
+  /* text-align: center; */
+  font-size: 20px;
+  border-radius: 0;
+  border-bottom: 2px solid #999;
+}
+
+.otp-issue-container {
+  margin-top: 16px;
+}
+.resend-otp-call {
+  margin-top: 5px;
+}
+
 /* ----------------------------------footer------------------------ */
 .footer__section {
   background-color: #1d181f;
@@ -250,8 +282,8 @@
 }
 .footer__container {
   display: flex;
-  
-    justify-content: space-between;
+
+  justify-content: space-between;
 }
 .footer__item ul {
   list-style-type: none;
@@ -269,22 +301,22 @@
   text-decoration: none;
   transition: color 0.3s;
 }
-.footer__item ul li:first-child a{
+.footer__item ul li:first-child a {
   color: #fff;
-    font-weight: 700;
-    letter-spacing: 2px;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    text-transform: uppercase;
-    font-family: proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  text-transform: uppercase;
+  font-family: proxima-nova, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 20px;
 }
-.footer__item ul li:first-child{
+.footer__item ul li:first-child {
   border-right: 1px solid white;
   margin-bottom: 16px;
 }
 
-.footer__social-icons a img{
+.footer__social-icons a img {
   vertical-align: middle;
   border-style: none;
   background-color: aliceblue;

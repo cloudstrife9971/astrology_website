@@ -1,13 +1,17 @@
 import React, { Component, Fragment } from "react";
-
+import OtpInput from "react-otp-input";
 export default class Authentication extends Component {
+  state = { otp: "" };
+  handleChange = (otp) => this.setState({ otp });
+
   render() {
-    const showHideClassName = this.props.show ? "overlay__section display-block" : "overlay__section display-none";
+    const showHideClassName = this.props.show
+      ? "overlay__section display-block"
+      : "overlay__section display-none";
     return (
+      
       <Fragment>
-        <section className={showHideClassName}
-        
-         >
+        <section className={showHideClassName}>
           <div className="custom-overlay">
             <div className="login-card">
               <div className="row">
@@ -18,8 +22,9 @@ export default class Authentication extends Component {
                 </div>
                 <div className="col-lg-7">
                   <div className="login-form-container">
-                    <button className='custom-cross-btn'
-                     onClick={this.props.hideModal}
+                    <button
+                      className="custom-cross-btn"
+                      onClick={this.props.hideModal}
                     ></button>
                     <h2 className="login-form-heading">LOGIN/SIGN UP</h2>
                     <h3 className="login-form-subheading">
@@ -71,9 +76,38 @@ export default class Authentication extends Component {
                       <span>Privacy Policy</span>
                     </p>
                   </div>
+                  {/* <div className="login-form-container">
+                    <button
+                      className="custom-cross-btn"
+                      onClick={this.props.hideModal}
+                    ></button>
+                    <h2 className="login-form-heading">Enter OTP</h2>
+                    <p className="login-form-subheading">
+                      OTP has been sent to you on your mobile number
+                    </p>
+                    <div className="enter-otp">Enter OTP</div>
+                    <div className="opt-input-container">
+                  
+                      <OtpInput
+                        value={this.state.otp}
+                        onChange={this.handleChange}
+                        numInputs={6}
+                        isInputNum={true}
+                      />
+                    </div>
+                    <div className="otp-issue-container">
+                      <div className="resend-otp">
+                        <span>Didn't receive the SMS? </span>
+                        <a href="">Resend</a>
+                      </div>
+                      <div className="resend-otp-call">
+                        <span>Having trouble receiving SMS? </span>
+                        <a href="">Resend OTP by Call</a>
+                      </div>
+                    </div>
+                    <button className="custom-submit-btn">VERIFY OTP</button>
+                  </div> */}
                 </div>
-                
-          
               </div>
             </div>
           </div>
