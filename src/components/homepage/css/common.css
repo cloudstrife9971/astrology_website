@@ -324,3 +324,89 @@
   border: 1px solid transparent;
   margin: 0px 4px;
 }
+
+/* -----------------------------------------horoscope----------------------------- */
+.test {
+  /* border: 1px solid black; */
+}
+.test-2 {
+  /* border: 1px solid green; */
+}
+.horoscope__title {
+  text-align: center;
+}
+.horoscope-section{
+  margin-top: 30px;
+}
+.horoscope-sign-container {
+}
+.horoscope-item {
+  cursor: pointer;
+   /* border: 1px solid red; */
+}
+
+.horoscope-item__img-container {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+.horoscope-item__img {
+  width: 100%;
+  /* margin-top: -22px; */
+  transform: scale(2);
+}
+.horoscope-item__container {
+  text-align: center;
+  text-transform: capitalize;
+  /* font-size: 13px; */
+  /* margin-top: -37px; */
+}
+.horoscope-item__title {
+  font-size: 19px;
+  margin-bottom: 4px;
+}
+.horoscope-item__date {
+  font-size: 11px;
+}
+
+@media (min-width: 576px) {
+  .horoscope-item__img {
+    transform: scale(2);
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .horoscope-item__img {
+    transform: scale(4);
+    width: 100%;
+  }
+  .horoscope-item__container {
+    margin-top: 15px;
+  }
+  .horoscope-sign-container {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .horoscope-item__img {
+    transform: scale(3.7);
+    width: 100%;
+  }
+  .horoscope-item__container {
+    margin-top: 19px;
+  }
+  .horoscope-item__title {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .horoscope-item__date {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1400px) {
+}
