@@ -352,8 +352,9 @@
 .horoscope-item__img {
   width: 100%;
   /* margin-top: -22px; */
-  transform: scale(2);
+  transform: scale(0.9);
 }
+
 .horoscope-item__container {
   text-align: center;
   text-transform: capitalize;
@@ -370,7 +371,7 @@
 
 @media (min-width: 576px) {
   .horoscope-item__img {
-    transform: scale(2);
+    transform: scale(1);
     width: 50%;
   }
 }
@@ -380,7 +381,7 @@
 
 @media (min-width: 992px) {
   .horoscope-item__img {
-    transform: scale(4);
+    transform: scale(1.3);
     width: 100%;
   }
   .horoscope-item__container {
@@ -389,22 +390,28 @@
   .horoscope-sign-container {
     margin-top: 50px;
   }
+  .horoscope-item:hover .horoscope-item__img {
+    transform: scale(1.5);
+    transition: .1s;
+  }
+  .horoscope-item__title {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
   .horoscope-item__img {
-    transform: scale(3.7);
     width: 100%;
   }
   .horoscope-item__container {
     margin-top: 19px;
   }
-  .horoscope-item__title {
-    font-size: 20px;
-    margin-bottom: 4px;
-  }
+
   .horoscope-item__date {
     font-size: 13px;
+  }
+  .horoscope-item__title {
+    font-size: 18px;
   }
 }
 

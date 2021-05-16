@@ -8,13 +8,14 @@ a:active {
   /* padding: 20px 20px; */
   display: flex;
   align-items: center;
+  padding: 10px 0px;
 }
 .header__logo-container {
   margin-right: auto;
 }
 .header__logo {
-  width: 93px;
-  height: 89px;
+  width: 217px;
+  height: auto;
 }
 .header__find-astro {
   font-size: 16px;
