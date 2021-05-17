@@ -246,6 +246,7 @@
 .enter-otp,
 .otp-issue-container {
   color: #666;
+  margin-bottom: 5px;
 }
 .resend-otp a,
 .resend-otp-call a {
