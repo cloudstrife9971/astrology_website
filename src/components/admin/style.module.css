@@ -1,0 +1,40 @@
+/* ---------------------------register-form---------------- */
+.registerForm__container {
+  /* border: 2px solid green; */
+  width: 400px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  text-transform: capitalize;
+  padding: 10px 14px;
+  overflow: scroll;
+  background-color: white;
+}
+.registerForm__container h2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin-bottom: 23px;
+  padding-bottom: 6px;
+}
+/* ------------------------- --update-form------------------ */
+
+/* ----------------------------astrologer-item----------------- */
+.astrologerList__container {
+  /* border: 2px solid red; */
+  margin-left: 400px;
+  height: 100vh;
+  text-transform: capitalize;
+  padding-top: 11px;
+  
+}
+.astrologerList__container h2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-bottom: 7px;
+  margin-left: 12px;
+    margin-right: 12px;
+}
+/* -----------------------------astrologer-list------------------ */

@@ -11,6 +11,7 @@ import Footer from "./components/homepage/footer.js";
 import UserInfo from "./components/user/index.js";
 import Termcondition from "./components/footerPages/term&condition.js";
 import Privacy from "./components/footerPages/privacy.js";
+import Admin from "./components/admin/index.js";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default class App extends Component {
   constructor() {
@@ -34,8 +35,9 @@ export default class App extends Component {
     return (
       <Fragment>
         <Router>
-          <Header showModal={this.showModal}></Header>
+          {/* <Header showModal={this.showModal}></Header> */}
           <Switch>
+         
             <Route exact path="/">
               <Homepage showModal={this.showModal}></Homepage>
             </Route>
@@ -45,12 +47,21 @@ export default class App extends Component {
             <Route path="/Login/Register">
               <Packs></Packs>
             </Route>
+           
+           
+            <Route path="/admin">
+              <Admin></Admin>
+            </Route>
             <Route path="/:id">
               <UserInfo></UserInfo>
             </Route>
           </Switch>
-          <Athentication show={this.state.show} hideModal={this.hideModal}></Athentication>
-          <Footer></Footer>
+          {/* <Athentication
+            show={this.state.show}
+            hideModal={this.hideModal}
+          ></Athentication>
+          <Footer></Footer> */}
+
           {/* <Termcondition></Termcondition> */}
           {/* <Privacy></Privacy> */}
         </Router>
