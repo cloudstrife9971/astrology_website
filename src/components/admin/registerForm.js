@@ -1,21 +1,57 @@
 import React, { Component } from "react";
 import style from "./style.module.css";
 import { Form, Button } from "react-bootstrap";
+import config from "../../config.json";
+import axios from "axios";
 export default class RegisterForm extends Component {
+  
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const value = e.target;
+
+    var astrologer = {
+      // name: null,
+      // email: null,
+      // phoneNumber: null,
+      // gender: null,
+      // language: null,
+      // expertise: null,
+      // yearOfExperience: null,
+      // ratePerMinute: null,
+      // rating: null,
+      // status: null,
+      phoneNumber : "9355539000",
+      password : "123",
+      name : "Guru ast",
+      email : "ast@gmail.co",
+      gender : "Male",
+      language : ["hindi", "english"],
+      expertise : ["expertise","expertise"],
+      yearOfExperience : 1.4,
+      ratePerMinute : "100"
+  
+    };
+
+    axios.post(`${config.serverURL}astrologer/register`, { ...astrologer })
+    .then(res => {
+      // console.log(res);
+      console.log(res.data);
+    })
+  
+
+  };
+
+
+
+
   render() {
     return (
       <div className={style.registerForm__container}>
         <h2>register astrologers</h2>
-        <Form>
-         
-        
-            <Form.Group>
-              <Form.File
-                id="exampleFormControlFile1"
-                label="Astrologer photo"
-              />
-            </Form.Group>
-       
+        <Form onSubmit={this.handleSubmit}>
+          {/* <Form.Group>
+            <Form.File id="exampleFormControlFile1" label="Astrologer photo" />
+          </Form.Group> */}
 
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Name</Form.Label>
@@ -105,27 +141,19 @@ export default class RegisterForm extends Component {
               <option>5</option>
             </Form.Control>
           </Form.Group>
-
-          <Form.Group controlId="formBasicCallOption">
-            <Form.Label>Call Option</Form.Label>
-            {["radio"].map((type) => (
-              <div key={`inline-${type}`} className="mb-3">
-                <Form.Check
-                  inline
-                  label="Yes"
-                  name="Yes"
-                  type={type}
-                  id={`inline-${type}-1`}
-                />
-                <Form.Check
-                  inline
-                  label="No"
-                  name="No"
-                  type={type}
-                  id={`inline-${type}-2`}
-                />
-              </div>
-            ))}
+          <Form.Group controlId="formBasicRate">
+            <Form.Label>Rate Per Minute</Form.Label>
+            <Form.Control type="tel" placeholder="Rate Per Minute" />
+          </Form.Group>
+          <Form.Group controlId="exampleForm.ControlSelect1">
+            <Form.Label>Rating</Form.Label>
+            <Form.Control as="select">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </Form.Control>
           </Form.Group>
 
           <Form.Group controlId="formBasicStatus">
@@ -148,17 +176,6 @@ export default class RegisterForm extends Component {
                 />
               </div>
             ))}
-          </Form.Group>
-
-          <Form.Group controlId="exampleForm.ControlSelect1">
-            <Form.Label>Rating</Form.Label>
-            <Form.Control as="select">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </Form.Control>
           </Form.Group>
 
           <Button variant="primary" type="submit">

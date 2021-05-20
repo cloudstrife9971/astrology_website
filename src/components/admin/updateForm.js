@@ -6,12 +6,16 @@ export default class UpdateForm extends Component {
     super(props);
     this.myRef = React.createRef();
   }
-  componentDidMoun() {}
+  componentDidMount() {
+    // this.myRef.current[1].value = "hello"
+    // console.log(this.myRef);
+    
+  }
   render() {
     return (
       <div className={style.registerForm__container}>
         <h2>Update Astrologer</h2>
-        <Form>
+        <Form ref={this.myRef}>
           <Form.Group>
             <Form.File id="exampleFormControlFile1" label="Astrologer photo" />
           </Form.Group>

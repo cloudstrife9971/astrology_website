@@ -21,13 +21,46 @@
 /* ------------------------- --update-form------------------ */
 
 /* ----------------------------astrologer-item----------------- */
+.astrologerCard__link {
+}
+.astrologerCard__link:hover .astrologerCard__img img {
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.astrologerCard__container {
+  display: flex;
+  /* border: 1px solid black; */
+  flex-wrap: wrap;
+}
+.astrologerCard__img {
+  max-width: 152px;
+  overflow: hidden;
+}
+.astrologerCard__img img {
+  width: 100%;
+  height: auto;
+}
+.astrologerCard__details {
+  padding: 8px 0px 0px 10px;
+}
+
+.astrologerCard__details > div {
+  font-size: 10px;
+  font-weight: 700;
+  color: #c7c7cc;
+}
+.astrologerCard__details > div > span {
+  color: #323232;
+}
+
+/* -----------------------------astrologer-list------------------ */
+
 .astrologerList__container {
-  /* border: 2px solid red; */
   margin-left: 400px;
   height: 100vh;
   text-transform: capitalize;
   padding-top: 11px;
-  
 }
 .astrologerList__container h2 {
   text-align: center;
@@ -35,6 +68,5 @@
   color: white;
   padding-bottom: 7px;
   margin-left: 12px;
-    margin-right: 12px;
+  margin-right: 12px;
 }
-/* -----------------------------astrologer-list------------------ */

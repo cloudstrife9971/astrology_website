@@ -24,7 +24,7 @@ export default class Authentication extends Component {
     axios.post(`${config.serverURL}users/verifyOTP`, { ...otp })
       .then(res => {
         // console.log(res);
-        console.log(res.data);
+        // console.log(res.data);
       })
 
   };
