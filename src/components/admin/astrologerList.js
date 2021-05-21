@@ -6,8 +6,8 @@ import AstrologerItem from "./astrologerItem";
 export default class AstrologerList extends Component {
   render() {
     // console.log( this.props.AstrologerList)
-    var List = this.props.AstrologerList.data
-      ? this.props.AstrologerList.data.map(( item, key) => {
+    var List = this.props.AstrologerList
+      ? this.props.AstrologerList.map(( item, key) => {
           return (
             <Col md={4} key={key}>
               <AstrologerItem  details={item}></AstrologerItem>

@@ -9,6 +9,14 @@ export default class index extends Component {
   state = {
     persons: [],
   };
+  handlePushData = (data) => {
+    // console.log(data)
+    // console.log(this.state.persons.data);
+    var persons = this.state.persons;
+    persons.push(data);
+    // console.log(persons);
+    this.setState({ persons });
+  };
 
   componentDidMount() {
     // console.log(config)
@@ -16,16 +24,16 @@ export default class index extends Component {
       .get("http://localhost:4000/astrologer/getAstrologerList")
       .then((res) => {
         const persons = res.data;
-        this.setState({ persons });
+        this.setState({ persons: persons.data });
       });
   }
   render() {
-    // console.log(this.state.persons)   
+    // console.log(this.state.persons);
     // console.log(this.state.persons.data && this.state.persons.data.length)
     return (
       <Fragment>
         <Route path="/admin">
-          <RegisterForm></RegisterForm>
+          <RegisterForm Pushdata={this.handlePushData}></RegisterForm>
         </Route>
         <Route path="/admin/update">
           <UpdateForm></UpdateForm>

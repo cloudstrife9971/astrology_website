@@ -4,7 +4,6 @@ import { Form, Button } from "react-bootstrap";
 import config from "../../config.json";
 import axios from "axios";
 export default class RegisterForm extends Component {
-  
   handleSubmit = (e) => {
     e.preventDefault();
     const value = e.target;
@@ -12,37 +11,45 @@ export default class RegisterForm extends Component {
     var astrologer = {
       // name: null,
       // email: null,
-      // phoneNumber: null,
+      // phoneNumber: "9971441252",
       // gender: null,
       // language: null,
       // expertise: null,
       // yearOfExperience: null,
       // ratePerMinute: null,
+
       // rating: null,
       // status: null,
-      phoneNumber : "9355539000",
-      password : "123",
-      name : "Guru ast",
-      email : "ast@gmail.co",
-      gender : "Male",
-      language : ["hindi", "english"],
-      expertise : ["expertise","expertise"],
-      yearOfExperience : 1.4,
-      ratePerMinute : "100"
-  
+
+      name: "shashank",
+      email: "shashanksingh42@gmail.com",
+      phoneNumber: "9971441288",
+      password: "123",
+      gender: "male",
+      language: ["hindi", "english"],
+      expertise: ["expertise", "expertise"],
+      yearOfExperience: 1.4,
+      ratePerMinute: "100",
+
+      // phoneNumber : "9355539000",
+      // password : "123",
+      // name : "Guru ast",
+      // email : "ast@gmail.co",
+      // gender : "Male",
+      // language : ["hindi", "english"],
+      // expertise : ["expertise","expertise"],
+      // yearOfExperience : 1.4,
+      // ratePerMinute : "100"
     };
 
-    axios.post(`${config.serverURL}astrologer/register`, { ...astrologer })
-    .then(res => {
-      // console.log(res);
-      console.log(res.data);
-    })
-  
-
+    axios
+      .post(`${config.serverURL}astrologer/register`, { ...astrologer })
+      .then((res) => {
+        this.props.Pushdata(astrologer)
+        // console.log(res);
+        // console.log(res.data);
+      });
   };
-
-
-
 
   render() {
     return (

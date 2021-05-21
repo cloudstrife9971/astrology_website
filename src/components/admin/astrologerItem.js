@@ -5,7 +5,7 @@ import style from "./style.module.css";
 import image from "./v3_0452616.jpg";
 export default class AstrologerItem extends Component {
   render() {
-    console.log(this.props.details);
+    // console.log(this.props.details);
     var astrologerDetails = this.props.details;
     // console.log(astrologerDetails.language.toString())
     return (
