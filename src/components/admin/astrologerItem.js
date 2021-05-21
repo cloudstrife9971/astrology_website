@@ -5,6 +5,9 @@ import style from "./style.module.css";
 import image from "./v3_0452616.jpg";
 export default class AstrologerItem extends Component {
   render() {
+    console.log(this.props.details);
+    var astrologerDetails = this.props.details;
+    // console.log(astrologerDetails.language.toString())
     return (
       <Link to="/admin/update" className={style.astrologerCard__link}>
         <div className={style.astrologerCard__container}>
@@ -13,34 +16,35 @@ export default class AstrologerItem extends Component {
           </div>
           <div className={style.astrologerCard__details}>
             <div>
-              name <span>shashank</span>
+              name <span>{astrologerDetails.name}</span>
             </div>
             <div>
-              email <span>shashanksingh42@gmail.com</span>
+              email <span>{astrologerDetails.email}</span>
             </div>
             <div>
-              phoneNumber <span>9971441252</span>
+              phoneNumber <span>{astrologerDetails.phoneNumber}</span>
             </div>
             <div>
-              gender <span>male</span>
+              gender <span>{astrologerDetails.gender}</span>
             </div>
             <div>
-              language <span>hindi , english</span>
+              language
+              <span>{astrologerDetails.language.toString()}</span>
             </div>
             <div>
-              expertise <span>taror,vedic,spanish,maya</span>
+              expertise <span>{astrologerDetails.expertise.toString()}</span>
             </div>
             <div>
-              yearOfExperience <span>4</span>
+              yearOfExperience <span>{astrologerDetails.yearOfExperience}</span>
             </div>
             <div>
-              ratePerMinute <span>1000000</span>
+              ratePerMinute <span>{astrologerDetails.ratePerMinute}</span>
             </div>
             <div>
-              rating <span>5</span>
+              rating <span>{astrologerDetails.rating}</span>
             </div>
             <div>
-              status <span>online</span>
+              status <span>{astrologerDetails.status}</span>
             </div>
           </div>
         </div>
